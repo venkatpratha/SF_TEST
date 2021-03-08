@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_new_project'
+name: 'LastMilePoc'
 version: '1.0.0'
 config-version: 2
 
@@ -31,8 +31,23 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/ directory
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
-models:
-  my_new_project:
-      # Applies to all files under models/example/
-      example:
-          materialized: view
+       
+seeds:
+  LastMilePoc:
+    +enabled: true
+    stop_type:
+      # Override column types
+      +column_types:
+        stop_type_code: varchar(3)
+        stop_type_desc: varchar(30)
+    commands:
+      # Override column types
+      +column_types:
+        command_code: varchar(3)
+        command_name: varchar(30)
+    status_codes:
+      # Override column types
+      +column_types:
+        status_code: varchar(3)
+        status_desc: varchar(30)
+   

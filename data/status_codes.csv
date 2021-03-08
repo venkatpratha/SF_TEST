@@ -1,0 +1,10 @@
+status_code,status_desc
+1,Pending
+2,Enroute
+3,Arrive
+4,Complete
+6,Missed
+7,Skipped
+11,Exception
+17,Begin
+18,Leave

@@ -1,0 +1,27 @@
+command_code,command_name
+1,Login
+2,Request Route
+3,Poll
+4,GPS
+5,Depart
+6,Enroute
+7,Arrive
+8,Complete
+9,Missed
+10,Skip
+11,Begin
+12,Leave
+19,End of Trip
+25,Text Message
+27,Update Resource
+32,Logout
+33,Acknowledgement
+35,Field Data
+36,Tracking GPS
+42,Sync
+44,Reconcile
+45,Missed Without Attempt
+48,Manage Stop
+51,Set Time
+53,Device Connect
+57,Abandon Route

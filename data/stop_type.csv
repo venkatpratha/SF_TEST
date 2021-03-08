@@ -1,0 +1,17 @@
+stop_type_code,stop_type_desc
+0,Start Depot
+1,Final Depot
+2,Pickup
+3,Delivery
+4,Both Pickup and Delivery
+5,Recharge
+6,Break
+7,Lunch
+8,Sleep
+9,Fuel
+10,Personal
+11,Business
+66,Pickup Complex
+67,Delivery Complex
+100,Unplanned
+101,Unscheduled

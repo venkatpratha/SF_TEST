@@ -1,0 +1,23 @@
+version: 2
+
+models:
+    - name: CUR_ROUTE
+      description: The daily routes published for transportation
+
+      columns:
+        - name: ROUTE_ID
+          description: The unique route id assigned for each route published for a given day 
+        - name: ROUTE_NAME
+          description: The route name of the route
+        - name: TRUCK_ID
+          description: The truck id
+        - name: DRIVER_ID
+          description: The driver id
+        - name: DRIVER_NAME
+          description: The name of the driver
+        - name: DEPART_TS
+          description: The departure timestamp
+        - name: ARRIVE_TS
+          description: The arrival timestamp
+        - name: ROUTE_TS
+          description: The timestamp of when the route is published                                                            
