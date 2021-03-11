@@ -31,6 +31,8 @@ select distinct
     status_m.exception_reason,
     stop.planned_arrival_ts,
     status_a.status_ts actual_arrival_ts,
+    stop.latitude stop_latitude,
+    stop.longitude stop_longitude,
     package.sales_order_id,
     package.delivery_id,
     package.handling_unit_num,

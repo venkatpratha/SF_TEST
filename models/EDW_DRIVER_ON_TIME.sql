@@ -12,6 +12,10 @@ select
     count(distinct case when stop_status = 'Missed' and exception_reason = 'Customer Refused' then handling_unit_num end) customer_refused
 from
     {{ref('EDW_ROUTE_DETAIL')}}
+group by 
+    route_ts,
+    driver_name
 )
+
 
 select * from edw_driver_on_time
